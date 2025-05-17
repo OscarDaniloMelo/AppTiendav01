@@ -1,0 +1,229 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_productos"
+    android:padding="16dp">
+
+    <!-- Título centrado -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carrito de Compras"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Contenedor de búsqueda -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- Campo de búsqueda -->
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:backgroundTint="#EBE5E4"
+            android:hint="Buscar productos"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Botón de agregar -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="#03A9F4"
+            android:padding="8dp"
+            android:text="Agregar" />
+    </LinearLayout>
+
+    <!-- Contenedor scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"> <!-- Para que el botón "Comprar" esté al final -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Producto 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_launcher_background"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Producto 1"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cantidad: 1"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Precio: $50.00"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <!-- Contenedor de botones y cantidad -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!-- Botón de aumentar -->
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:backgroundTint="#4CAF50"
+                        android:text="+"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                    <!-- Cantidad -->
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"/>
+
+                    <!-- Botón de disminuir -->
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:backgroundTint="#E91E63"
+                        android:text="-"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Producto 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_launcher_foreground"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Producto 2"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cantidad: 2"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Precio: $200.00"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <!-- Contenedor de botones y cantidad -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <!-- Botón de aumentar -->
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:backgroundTint="#4CAF50"
+                        android:text="+"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                    <!-- Cantidad -->
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:text="2"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"/>
+
+                    <!-- Botón de disminuir -->
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:backgroundTint="#E91E63"
+                        android:text="-"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón "Comprar" -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Comprar"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>

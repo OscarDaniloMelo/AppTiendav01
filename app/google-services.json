@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "823953529690",
+    "project_id": "logintienda-c872e",
+    "storage_bucket": "logintienda-c872e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823953529690:android:79c5f1ea06b224272cf163",
+        "android_client_info": {
+          "package_name": "com.example.tiendaonline_v01"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhXVkFAMO8_kBg-tZBCl9ZwEx2OFpeu-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
